@@ -6,15 +6,16 @@ Several comparative-synapse layers are defined as custom Keras-3 layers and used
 Some papers describing this research in more details will be released soon. In the meantime, if you find this repository useful, please feel free to star it or cite [our base approach](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/CITATION.cff)  
 
 References 
+
 [1] https://ieeexplore.ieee.org/document/9817267 published 2022
 [2] https://ieeexplore.ieee.org/document/802828 published 1999
 [3] https://ieeexplore.ieee.org/document/9156624 published 2020
 
-SOME RESULTS 
+**SOME RESULTS 
 Model DVTINY_N_1_d_0.3_(1, 4, 6)_k_16_nl(0, 0, 0)_hid_0
 Using various synapse types in both convolutional and dense layers
-
-CIFAR10 results (81k parameters /  6453k MAC or MiAC or SAC) 
+**
+**CIFAR10** results (81k parameters /  6453k MAC or MiAC or SAC) 
 Note: MAC - Multiply and Accumulate; MiAC = Min and Accumulate; SAC - Subtract and Accumulate 
 
 |Synapse type | Val. Accuracy (%)| .keras model | 
@@ -24,7 +25,7 @@ Note: MAC - Multiply and Accumulate; MiAC = Min and Accumulate; SAC - Subtract a
 | AdderNet | 76.91 | |
 
 
-Fashion-MNIST results (80.2k parameters / 4721k MAC or MiAC or SAC) 
+**Fashion-MNIST** results (80.2k parameters / 4721k MAC or MiAC or SAC) 
 
 |Synapse type | Val. Accuracy (%)| .keras model | 
 | :---: | :---: | :---: |
@@ -33,7 +34,7 @@ Fashion-MNIST results (80.2k parameters / 4721k MAC or MiAC or SAC)
 | AdderNet | t.b.c. | |
 
 
-SVHN results ( k parameters / k MAC or MiAC or SAC) 
+**SVHN results** ( k parameters / k MAC or MiAC or SAC) 
 
 |Synapse type | Val. Accuracy (%)| .keras model | 
 | :---: | :---: | :---: |
@@ -41,7 +42,7 @@ SVHN results ( k parameters / k MAC or MiAC or SAC)
 | multiplier | 93.35 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_Mm_svhn_n%20Sz_32%20Bt_128%20Lrate_%200.00128%20Ep_200%20Tep_2.5%20Kpar_80.48kMAC-1.0%20Vacc_93.35%20TrAcc_90.08ValData_Val_acc_93.35%20Lat_0.07.keras) | 
 | AdderNet | t.b.c. | |
 
-MNIST results ( 80.2 k parameters / 4721k MAC or MiAC or SAC) 
+**MNIST** results ( 80.2 k parameters / 4721k MAC or MiAC or SAC) 
 
 |Synapse type | Val. Accuracy (%)| .keras model | 
 | :---: | :---: | :---: |
