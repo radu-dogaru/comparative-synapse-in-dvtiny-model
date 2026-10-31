@@ -13,15 +13,14 @@ References
 
 **SOME RESULTS: Model DVTINY_N_1_d_0.3_(1, 4, 6)_k_16_nl(0, 0, 0)_hid_0  Using various synapse types in both convolutional and dense layers**
 
-**CIFAR10** results (81k parameters /  6453k MAC or MiAC or SAC) 
+**CIFAR10** results (80.49k parameters /  6453k MAC or MiAC or SAC) 
 Note: MAC - Multiply and Accumulate; MiAC = Min and Accumulate; SAC - Subtract and Accumulate 
 
 |Synapse type | Val. Accuracy (%)| .keras model | 
 | :---: | :---: | :---: |
 | comp (L1) | 79.42 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_cifar10%20Sz_32%20Bt_128%20Lrate_%200.00128%20Ep_600%20Tep_14%20Kpar_81.0kMAC-1.0%20Vacc_79.42%20TrAcc_79ValData_Val_acc_79.42%20Lat_0.28.keras) |
 | multiplier | 79.7 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_Mm_cifar10%20Sz_32%20Bt_128%20Lrate_%200.00128%20Ep_400%20Tep_1.2%20Kpar_80.48kMAC-1.0%20Vacc_79.74%20TrAcc_79.35ValData_Val_acc_79.7.keras) |
-| AdderNet | 76.91 | |
-
+| AdderNet | 75.17 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/ADD_GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_cifar10%20Sz_32%20Bt_128%20Lrate_%200.00256%20Ep_200%20Tep_8.4%20Kpar_81.0kMAC-1.0%20Vacc_75.17%20TrAcc_73.06.keras) |
 
 **Fashion-MNIST** results (80.2k parameters / 4721k MAC or MiAC or SAC) 
 
@@ -29,16 +28,15 @@ Note: MAC - Multiply and Accumulate; MiAC = Min and Accumulate; SAC - Subtract a
 | :---: | :---: | :---: |
 | comp (L1) | 92.44 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_f-mnist%20Sz_28%20Bt_128%20Lrate_%200.00128%20Ep_200%20Tep_12.4%20Kpar_80.72kMAC-1.0%20Vacc_92.44%20TrAcc_91.89ValData_Val_acc_92.44%20Lat_0.21.keras) |
 | multiplier | 92.09 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_Mm_f-mnist%20Sz_28%20Bt_128%20Lrate_%200.00128%20Ep_200%20Tep_1.6%20Kpar_80.2kMAC-1.0%20Vacc_92.09%20TrAcc_91.92ValData_Val_acc_92.09%20Lat_0.12.keras) |
-| AdderNet | t.b.c. | |
+| AdderNet | 86.77 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/ADD_GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_f-mnist%20Sz_28%20Bt_128%20Lrate_%200.00256%20Ep_200%20Tep_8.0%20Kpar_80.72kMAC-1.0%20Vacc_86.77%20TrAcc_85.4.keras) |
 
-
-**SVHN results** ( k parameters / k MAC or MiAC or SAC) 
+**SVHN results** ( 80.49k parameters / 6453k MAC or MiAC or SAC) 
 
 |Synapse type | Val. Accuracy (%)| .keras model | 
 | :---: | :---: | :---: |
 | comp (L1) | 93.09 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_svhn_n%20Sz_32%20Bt_128%20Lrate_%200.00192%20Ep_200%20Tep_19.8%20Kpar_81.0kMAC-1.0%20Vacc_93.09%20TrAcc_90.41ValData_Val_acc_93.09%20Lat_0.keras) |
 | multiplier | 93.35 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_Mm_svhn_n%20Sz_32%20Bt_128%20Lrate_%200.00128%20Ep_200%20Tep_2.5%20Kpar_80.48kMAC-1.0%20Vacc_93.35%20TrAcc_90.08ValData_Val_acc_93.35%20Lat_0.07.keras) | 
-| AdderNet | t.b.c. | |
+| AdderNet | 91.73 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/ADD_GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_svhn_n%20Sz_32%20Bt_128%20Lrate_%200.00256%20Ep_200%20Tep_12.7%20Kpar_81.0kMAC-1.0%20Vacc_91.73%20TrAcc_87.31ValD.keras) |
 
 **MNIST** results ( 80.2 k parameters / 4721k MAC or MiAC or SAC) 
 
@@ -46,9 +44,7 @@ Note: MAC - Multiply and Accumulate; MiAC = Min and Accumulate; SAC - Subtract a
 | :---: | :---: | :---: |
 | comp (L1) | 99.5 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_mnist%20Sz_28%20Bt_128%20Lrate_%200.00192%20Ep_200%20Tep_12.5%20Kpar_80.72kMAC-1.0%20Vacc_99.5%20TrAcc_99.52ValData_Val_acc_99.5%20Lat_0.24.keras) |
 | multiplier | 99.56 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_Mm_mnist%20Sz_28%20Bt_128%20Lrate_%200.00064%20Ep_200%20Tep_1.4%20Kpar_80.2kMAC-1.0%20Vacc_99.56%20TrAcc_99.7ValData_Val_.keras) | 
-| AdderNet | t.b.c. | |
-
-
+| AdderNet | 99.36 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/ADD_GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_mnist%20Sz_28%20Bt_128%20Lrate_%200.00256%20Ep_200%20Tep_7.9%20Kpar_80.72kMAC-1.0%20Vacc_99.36%20TrAcc_99.31V.keras) |
 
 
 
