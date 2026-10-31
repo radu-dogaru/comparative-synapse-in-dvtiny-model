@@ -7,9 +7,9 @@ Some papers describing this research in more details will be released soon. In t
 
 References 
 
-[1] https://ieeexplore.ieee.org/document/9817267 published 2022 
-[2] https://ieeexplore.ieee.org/document/802828 published 1999 
-[3] https://ieeexplore.ieee.org/document/9156624 published 2020 
+ [[1]](https://ieeexplore.ieee.org/document/9817267) published 2022 
+ [[2]](https://ieeexplore.ieee.org/document/802828) published 1999 
+ [[3]](https://ieeexplore.ieee.org/document/9156624) published 2020 
 
 **SOME RESULTS: Model DVTINY_N_1_d_0.3_(1, 4, 6)_k_16_nl(0, 0, 0)_hid_0  Using various synapse types in both convolutional and dense layers**
 
