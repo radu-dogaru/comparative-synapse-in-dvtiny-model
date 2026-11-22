@@ -46,6 +46,12 @@ Note: MAC - Multiply and Accumulate; MiAC = Min and Accumulate; SAC - Subtract a
 | multiplier | 99.56 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_Mm_mnist%20Sz_28%20Bt_128%20Lrate_%200.00064%20Ep_200%20Tep_1.4%20Kpar_80.2kMAC-1.0%20Vacc_99.56%20TrAcc_99.7ValData_Val_.keras) | 
 | AdderNet | 99.36 | [***](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/ADD_GPU_DVTINY_N_1_d_0.3_(1%2C%204%2C%206)_k_16_nl(0%2C%200%2C%200)_hid_0Sy_CL_mnist%20Sz_28%20Bt_128%20Lrate_%200.00256%20Ep_200%20Tep_7.9%20Kpar_80.72kMAC-1.0%20Vacc_99.36%20TrAcc_99.31V.keras) |
 
+**Best accuracy on CIFAR10 with comparative synapses** (no augmentation)
+
+**82.05%** validation accuracy (96k parameters /  10566k MiAC) 
+
+When using nl=(1,1,0) i.e. adding depthwise layers to macro-blocks performance may improve slightly at the expense of larger number of ops.  [link to model](https://github.com/radu-dogaru/comparative-synapse-in-dvtiny-model/blob/main/trained_models/GPU_DVTINY_N_1_d_0.3_%281%2C%204%2C%203%29_k_24_nl%281%2C%201%2C%200%29_hid_0Sy_CL_cifar10%20Sz_32%20Bt_128%20Lrate_%200.00256%20Ep_100%20Tep_26.9%20Kpar_97.44kMAC-1.0%20Vacc_82.05%20TrAcc_83.64ValData_Val_acc_82.05%20Lat_0.32.keras)
+
 
 
 
